@@ -1,0 +1,57 @@
+.client-section{
+    padding-top: 120px;
+    padding-bottom: 94px;
+}
+
+.client-section-name{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+
+}
+
+.client-list{
+    display: flex;
+}
+.client-link{
+    display: flex;
+    border: 1px solid  #AFB1B8;
+     width: 170px;
+    height: 92px;
+     border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+     margin-right: 30px;
+     color:  #AFB1B8;
+;
+    
+}
+.client-logo-box{
+     width: -106px;
+    height: -60px;
+    
+}
+
+.client-logo{
+    width: 106px;
+    height: 60px;
+}
+
+.client-logo-svg{   
+    fill: currentColor;
+}
+.clien-link svg:hover,
+.clien-link svg:focus{
+    fill: #2196F3;
+
+}
+.client-link:hover,
+.client-link:focus{ 
+    border-color: #2196F3;
+    color: #2196F3;
+}

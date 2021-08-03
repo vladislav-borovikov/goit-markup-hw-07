@@ -1,0 +1,49 @@
+.hero-section {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom: 200px ;
+    padding-top: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../imeges/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top; 
+}
+
+.hero-discription {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.hero-discription-conteyner{
+    width: 696px;
+}
+
+.hero-batton {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background:var(--botton-collor);
+    color: #FFFFFF;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;	
+    justify-content: center; 
+}
+
+.hero-batton:focus,
+.hero-batton:hover {
+background: #188CE8;
+}

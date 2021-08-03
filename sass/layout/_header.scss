@@ -1,0 +1,95 @@
+.header-section {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;  
+}
+.email-logo{
+    margin-right: 10px;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--botton-collor);
+    transition-property: color;
+
+  
+
+}
+
+.navigation-link:not(:last-child){
+    margin-right: 50px;
+
+
+}
+.navigation-section{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    justify-content: flex-start;
+}
+
+.navigation:hover,
+.navigation:focus {
+    color: var(--botton-collor);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.underline::after {
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background:var(--botton-collor);
+    border-radius: 2px;
+    flex-shrink: 0;
+    margin-top: 28px;
+    margin-bottom: -28px;
+}
+
+.contacts {
+    display: flex;
+    margin-right: 15px;
+    margin-left: auto;
+    
+
+}
+
+.contacts-link{
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--names-adress-discriptions);
+    margin-left: 10px;
+}
+
+.contact-object:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color:var(--botton-collor);
+    fill: var(--botton-collor);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.header-portfolio {
+    border-bottom: 1px solid #ECECEC;
+}
