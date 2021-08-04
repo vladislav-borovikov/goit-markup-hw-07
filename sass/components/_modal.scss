@@ -24,7 +24,6 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: #757575;
-    
 }
 
 .modal-form-input{
@@ -37,12 +36,12 @@
     padding-left: 42px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-}
-.modal-form-input:focus{
-    outline: none;
-    border-color: var(--botton-collor);
-}
 
+        &:focus{
+            outline: none;
+            border-color: var(--botton-collor);
+        }
+}
 
 .modal-form-icon{
     width: 18px;
@@ -52,11 +51,12 @@
     transform: translateY(-50%);
     left: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .modal-form-input:focus+&{
+            fill: var(--botton-collor);
+        }
 }
 
-.modal-form-input:focus+.modal-form-icon{
-    fill: var(--botton-collor);
-}
 .modal-form-input-wraper {
     position: relative;
     display: block;
@@ -73,37 +73,15 @@
     margin-bottom: 20px;
     cursor: pointer;
 
-}
-.modal-form-massege::placeholder{
-    color: rgba(117, 117, 117, 0.5);
-}
+        &::placeholder{
+            color: rgba(117, 117, 117, 0.5);
+        }
 
-.modal-form-massege:focus{
-    outline: none;
-    border-color: var(--botton-collor);
-}
+        &:focus{
+            outline: none;
+            border-color: var(--botton-collor);
+        }
 
-.modal-form-chekbox:checked + .modal-form-chekbox-label::before{
-   background-image: url("../imeges/icon-check.svg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-origin: padding-box;
-   border: none;
-}
-
-.modal-form-chekbox:focus + .modal-form-chekbox-label::before{
-   outline: 2px solid  var(--botton-collor);
-}
-
-.modal-form-chekbox-label::before{
-    content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgba(33, 33, 33, 1);
-    border-radius: 3px;
-    cursor: pointer;
-    margin-right: 8px;
 }
 
 .modal-form-chekbox-label{
@@ -116,4 +94,27 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+
+        &::before{
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid rgba(33, 33, 33, 1);
+            border-radius: 3px;
+            cursor: pointer;
+            margin-right: 8px;
+
+                .modal-form-chekbox:checked + &{
+                    background-image: url("../imeges/icon-check.svg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-origin: padding-box;
+                    border: none;
+                    }
+
+                .modal-form-chekbox:focus + &{
+                    outline: 2px solid  var(--botton-collor);
+                }
+        }
 }

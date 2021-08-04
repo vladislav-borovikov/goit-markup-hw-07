@@ -1,6 +1,4 @@
-.logo-sacond-part-footer{
-    color: #FFFFFF;
-}
+
 .footer{
     display: flex;
     padding: 60px auto 60px auto ;
@@ -90,12 +88,14 @@
     margin-top: 20px;
     margin-right: 10px;
 
+        &:hover,
+        &:focus{
+            background-color: var(--botton-collor);
+        }
+
 }
 
-.social-list-link-box:hover,
-.social-list-link-box:focus{
-    background-color: var(--botton-collor);
-}
+
 
 .footer-form-blok{
     margin-left: auto;
@@ -140,12 +140,12 @@
     padding-right: 28px;
     border: none;
 
+        &:hover,
+        &:focus{
+            background-color: rgba(33, 150, 243, 1);
+        }
+}
 
-}
-.button-subscription:hover,
-.button-subscription:focus{
-    background-color: rgba(33, 150, 243, 1);
-}
 .footer-logo-send{
     width: 24px;
     height: 24px;
