@@ -458,7 +458,7 @@ svg {
   display: flex;
 }
 
-.advantages {
+.advantages__titel {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -469,7 +469,7 @@ svg {
   margin-bottom: 10px;
 }
 
-.advantages-description {
+.advantages__description {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
